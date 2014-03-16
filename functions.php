@@ -89,9 +89,6 @@
 	// learn more: http://codex.wordpress.org/Post_Formats
 	// add_theme_support( 'post-formats', array( 'aside', 'gallery','link','image','quote','status','video','audio','chat' ) );
 
-	// removes detailed login error information for security
-	add_filter('login_errors',create_function('$a', "return null;"));
-	
 	// removes the WordPress version from your header for security
 	function wb_remove_version() {
 		return '<!--built on the Whiteboard Framework-->';
